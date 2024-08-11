@@ -1,13 +1,15 @@
 # Проектная работа "Веб-ларек"
 
-Стек: HTML, SCSS, TS, Webpack
+ссылка на репозиторий: https://github.com/Piumick/web-larek-frontend.git
 
-Структура проекта:
+###Стек: HTML, SCSS, TS, Webpack
+
+###Структура проекта:
 - src/ — исходные файлы проекта
 - src/components/ — папка с JS компонентами
 - src/components/base/ — папка с базовым кодом
 
-Важные файлы:
+###Важные файлы:
 - src/pages/index.html — HTML-файл главной страницы
 - src/types/index.ts — файл с типами
 - src/index.ts — точка входа приложения
