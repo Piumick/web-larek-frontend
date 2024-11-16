@@ -17,4 +17,11 @@
     @include mixins.button(white, $primaryLight, $primaryLight);
     border: $hoverBorder;
   }
+  &_disabled {
+    @include mixins.button(grey, $primaryLight, $primaryLight);
+    border: $defaultBorder;
+    &:hover {
+      border: $hoverBorder;
+    }
+  }
 }

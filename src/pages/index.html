@@ -87,7 +87,7 @@
 					</ul>
 					<div class="modal__actions">
 						<button class="button">Оформить</button>
-						<span class="basket__price">153 250 синапсов</span>
+						<span class="basket__price">0 синапсов</span>
 					</div>
 				</div>
 			</div>
@@ -109,11 +109,11 @@
 						</div>
 						<label class="order__field">
 							<span class="form__label modal__title">Адрес доставки</span>
-							<input class="form__input" type="text" placeholder="Введите адрес" />
+							<input class="form__input" type="text" name="address" placeholder="Введите адрес" />
 						</label>
 					</div>
 					<div class="modal__actions">
-						<button disabled class="button">Далее</button>
+						<button disabled class="button submit-button">Далее</button>
 					</div>
 				</form>
 			</div>
@@ -125,18 +125,18 @@
 			<button class="modal__close" aria-label="закрыть"></button>
 			<div class="modal__content">
 				<form class="form">
-					<div class="order">
+					<div class="customer">
 						<label class="order__field">
 							<span class="form__label modal__title">Email</span>
-							<input class="form__input" type="text" placeholder="Введите Email" />
+							<input class="form__input" name="email" type="text" placeholder="Введите Email" />
 						</label>
 						<label class="order__field">
 							<span class="form__label modal__title">Телефон</span>
-							<input class="form__input" type="text" placeholder="+7 (" />
+							<input class="form__input" name="phone" type="text" placeholder="+7 (" />
 						</label>
 					</div>
 					<div class="modal__actions">
-						<button disabled class="button">Оплатить</button>
+						<button disabled class="button submit-button">Оплатить</button>
 					</div>
 				</form>
 			</div>
@@ -174,7 +174,7 @@
 	</template>
 
 	<template id="card-preview">
-		<div class="card card_full">
+		<div class="card_full card ">
 			<img class="card__image" src="<%=require('../images/Subtract.svg')%>" alt="" />
 			<div class="card__column">
 				<span class="card__category card__category_other">другое</span>
