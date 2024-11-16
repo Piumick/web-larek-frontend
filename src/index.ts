@@ -82,6 +82,7 @@ events.on('initialData:loaded', () => {
 })
 
 events.on('cardFull:open', (card: {card: CardInCatalog})=>{
+
   modal.content = cardFull.render(cardsData.getById(card.card.id))
   cardFull.toogleButtonState(basketData.isInBasket(card.card.id))
   modal.open()
